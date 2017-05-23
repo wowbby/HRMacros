@@ -1,0 +1,6 @@
+framework module Pods_HRMacros_Example {
+  umbrella header "Pods-HRMacros_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

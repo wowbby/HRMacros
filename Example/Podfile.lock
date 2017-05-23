@@ -1,0 +1,16 @@
+PODS:
+  - HRMacros (0.1.0)
+
+DEPENDENCIES:
+  - HRMacros (from `../`)
+
+EXTERNAL SOURCES:
+  HRMacros:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HRMacros: 11ea8a31be4de78e275c732d3ceeaeb36718a819
+
+PODFILE CHECKSUM: 52973d4af290961aee900fc43b21deafef2dd443
+
+COCOAPODS: 1.2.1

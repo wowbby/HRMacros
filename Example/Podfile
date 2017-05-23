@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HRMacros_Example' do
+  pod 'HRMacros', :path => '../'
+
+  target 'HRMacros_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
