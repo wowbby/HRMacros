@@ -18,21 +18,32 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
-#define kWidth4(R) (R)*(kScreenWidth)/320 //这里的320我是针对4s为标准适配的,如果需要其他标准可以修改
-#define kHeight4(R) (iPhone4? R:((R)*(kScreenHeight)/480))  //这里的480我是针对4s为标准适配的,如果需要其他标准可以修改
+#define iPhoneX (kScreenW == 375.f && kScreenH == 812.f ? YES : NO)
+// 适配iPhone X 状态栏高度
+#define HR_StatusBarHeight (iPhoneX ? 44.f : 20.f)
+// 适配iPhone X 导航栏高度
+#define HR_NavHeight (iPhoneX ? 88.f : 64.f)
+// 适配iPhone X Tabbar距离底部的距离
+#define HR_TabbarSafeBottomMargin (iPhoneX ? 34.f : 0.f)
+// 适配iPhone X Tabbar高度
+#define HR_TabbarHeight (iPhoneX ? (49.f + 34.f) : 49.f)
 
-#define kWidth5(R) (R)*(kScreenWidth)/320 //这里的320我是针对5s为标准适配的,如果需要其他标准可以修改
-#define kHeight5(R) (iPhone5? R:((R)*(kScreenHeight)/568))  //这里的568我是针对5s为标准适配的,如果需要其他标准可以修改
 
-#define kWidth6(R) (R)*(kScreenWidth)/375 //这里的375我是针对6s为标准适配的,如果需要其他标准可以修改
-#define kHeight6(R) (iPhone6? R:((R)*(kScreenHeight)/667))  //这里的667我是针对6s为标准适配的,如果需要其他标准可以修改
+#define kWidth4(R) (R) * (kScreenWidth) / 320 //这里的320我是针对4s为标准适配的,如果需要其他标准可以修改
+#define kHeight4(R) (iPhone4 ? R : ((R) * (kScreenHeight) / 480)) //这里的480我是针对4s为标准适配的,如果需要其他标准可以修改
 
-#define kWidth6p(R) (R)*(kScreenWidth)/414 //这里的414我是针对6p为标准适配的,如果需要其他标准可以修改
-#define kHeight6p(R) (iPhone6plus? R:((R)*(kScreenHeight)/736))  //这里的736我是针对6p为标准适配的,如果需要其他标准可以修改
+#define kWidth5(R) (R) * (kScreenWidth) / 320 //这里的320我是针对5s为标准适配的,如果需要其他标准可以修改
+#define kHeight5(R) (iPhone5 ? R : ((R) * (kScreenHeight) / 568)) //这里的568我是针对5s为标准适配的,如果需要其他标准可以修改
 
-#define font4_5(R) (R)*(kScreenWidth)/320.0  //这里是4s\5s屏幕字体
-#define font6(R) (R)*(kScreenWidth)/375.0  //这里是6屏幕字体
-#define font6p(R) (R)*(kScreenWidth)/414.0  //这里是6p屏幕字体
+#define kWidth6(R) (R) * (kScreenWidth) / 375 //这里的375我是针对6s为标准适配的,如果需要其他标准可以修改
+#define kHeight6(R) (iPhone6 ? R : ((R) * (kScreenHeight) / 667)) //这里的667我是针对6s为标准适配的,如果需要其他标准可以修改
+
+#define kWidth6p(R) (R) * (kScreenWidth) / 414 //这里的414我是针对6p为标准适配的,如果需要其他标准可以修改
+#define kHeight6p(R) (iPhone6plus ? R : ((R) * (kScreenHeight) / 736)) //这里的736我是针对6p为标准适配的,如果需要其他标准可以修改
+
+#define font4_5(R) (R) * (kScreenWidth) / 320.0 //这里是4s\5s屏幕字体
+#define font6(R) (R) * (kScreenWidth) / 375.0 //这里是6屏幕字体
+#define font6p(R) (R) * (kScreenWidth) / 414.0 //这里是6p屏幕字体
 
 #define FontMake4_5(size) [UIFont systemFontOfSize:font4_5(size)]
 #define FontMake6(size) [UIFont systemFontOfSize:font6(size)]
@@ -42,6 +53,6 @@
 #define HR_LAZY(object, assignment) (object = object ?: assignment)
 //GCD
 #define HRBACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
-#define HRMAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+#define HRMAIN(block) dispatch_async(dispatch_get_main_queue(), block)
 
 #endif /* Macros_h */
