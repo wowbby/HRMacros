@@ -1,16 +1,27 @@
 PODS:
-  - HRMacros (0.1.0)
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
+  - HRMacros (0.5.0):
+    - WoWLogManager
+  - WoWLogManager (0.1.0):
+    - CocoaLumberjack
 
 DEPENDENCIES:
   - HRMacros (from `../`)
 
 EXTERNAL SOURCES:
   HRMacros:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  HRMacros: 11ea8a31be4de78e275c732d3ceeaeb36718a819
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
+  HRMacros: b83611bc36f2ccbc5d1d4b786d21d7353db39972
+  WoWLogManager: 6911dab8c1ab4b5728c22c1be63a6afb98e7fd79
 
 PODFILE CHECKSUM: 52973d4af290961aee900fc43b21deafef2dd443
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
