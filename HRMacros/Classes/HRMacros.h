@@ -55,4 +55,11 @@
 #define HRBACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define HRMAIN(block) dispatch_async(dispatch_get_main_queue(), block)
 
+//日志打印
+#define LogError(frmt, ...) DDLogError(frmt, ##__VA_ARGS__)
+#define LogWarn(frmt, ...) DDLogWarn(frmt, ##__VA_ARGS__)
+#define LogInfo(frmt, ...) DDLogInfo(frmt, ##__VA_ARGS__)
+#define LogDebug(frmt, ...) DDLogDebug(frmt, ##__VA_ARGS__)
+#define LogVerbose(frmt, ...) DDLogVerbose(frmt, ##__VA_ARGS__)
+
 #endif /* Macros_h */
