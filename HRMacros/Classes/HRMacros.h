@@ -56,7 +56,7 @@
 #define HRMAIN(block) dispatch_async(dispatch_get_main_queue(), block)
 
 //日志打印
-#import <WoWLogManager.h>
+#import <WoWLogManager/WoWLogManager.h>
 #define LogError(frmt, ...) DDLogError(frmt, ##__VA_ARGS__)
 #define LogWarn(frmt, ...) DDLogWarn(frmt, ##__VA_ARGS__)
 #define LogInfo(frmt, ...) DDLogInfo(frmt, ##__VA_ARGS__)

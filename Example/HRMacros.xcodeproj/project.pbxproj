@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2CB8F01816BA75CAE66F0D2 /* Pods-HRMacros_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRMacros_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRMacros_Tests/Pods-HRMacros_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B1E0DBEEF7068C0E59AA9BE6 /* HRMacros.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HRMacros.podspec; path = ../HRMacros.podspec; sourceTree = "<group>"; };
+		B1E0DBEEF7068C0E59AA9BE6 /* HRMacros.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HRMacros.podspec; path = ../HRMacros.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E3BA925E3CF5449CDB31108B /* Pods-HRMacros_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRMacros_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRMacros_Example/Pods-HRMacros_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
